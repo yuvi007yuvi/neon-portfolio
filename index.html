@@ -23,12 +23,16 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(45deg, #121212 25%, #1f1f1f 75%); /* Gradient Background */
-      background-size: 400% 400%; /* Creates the glowing effect */
-      animation: gradientBackground 10s ease infinite; /* Animation for moving gradient */
+      background: linear-gradient(45deg, #121212 25%, #1f1f1f 75%);
+      /* Gradient Background */
+      background-size: 400% 400%;
+      /* Creates the glowing effect */
+      animation: gradientBackground 10s ease infinite;
+      /* Animation for moving gradient */
     }
-        /* Adjusting the Navbar, Footer, and other sections to fit the theme */
-        .navbar,
+
+    /* Adjusting the Navbar, Footer, and other sections to fit the theme */
+    .navbar,
     .footer {
       background-color: #1f1f1f;
     }
@@ -37,12 +41,13 @@
     /* Hero Section */
     /* Hero Section Styling */
     .hero {
-      background: url('https://miro.medium.com/v2/resize:fit:996/1*xNQKHj5vR7w9AcY_bDKYYw.gif')  ; /* Hero image with cover */
+      background: url('https://miro.medium.com/v2/resize:fit:996/1*xNQKHj5vR7w9AcY_bDKYYw.gif');
+      /* Hero image with cover */
       color: #fff;
       padding: 100px 0;
       text-align: center;
       background-size: contain;
-      background-position:center ;
+      background-position: center;
       position: relative;
     }
 
@@ -53,7 +58,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text more readable */
+      background: rgba(0, 0, 0, 0.5);
+      /* Dark overlay to make text more readable */
       z-index: 1;
     }
 
@@ -65,7 +71,8 @@
     .hero h1 {
       font-size: 3.5rem;
       font-weight: 700;
-      color: #f6fdfd; /* Neon Cyan */
+      color: #f6fdfd;
+      /* Neon Cyan */
       text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
     }
 
@@ -100,9 +107,11 @@
       0% {
         background-position: 0 0;
       }
+
       50% {
         background-position: 400% 400%;
       }
+
       100% {
         background-position: 0 0;
       }
@@ -112,7 +121,8 @@
     .section-heading {
       font-size: 2rem;
       font-weight: 600;
-      color: #feffff;  /* Neon Cyan */
+      color: #feffff;
+      /* Neon Cyan */
       text-shadow: 0 0 5px rgba(0, 255, 255, 1), 0 0 10px rgba(0, 255, 255, 1), 0 0 15px rgba(0, 255, 255, 1);
     }
 
@@ -196,7 +206,8 @@
 
     /* Ensuring Card Height Consistency */
     .card {
-      min-height: 300px; /* Adjust the value as needed */
+      min-height: 300px;
+      /* Adjust the value as needed */
     }
 
     /* Neon Button Effect */
@@ -231,8 +242,7 @@
     .card:hover {
       box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
     }
-
-</style>
+  </style>
 
 </head>
 
@@ -261,7 +271,8 @@
   <section class="hero">
     <div class="container">
       <h1 class="neon-text">Welcome to My Portfolio</h1>
-      <p class="lead">Discover my work and explore the projects I’ve developed using modern technologies like HTML, CSS, JavaScript, React, and more!</p>
+      <p class="lead">Discover my work and explore the projects I’ve developed using modern technologies like HTML, CSS,
+        JavaScript, React, and more!</p>
       <a href="#projects" class="btn neon-btn">Explore Projects</a>
     </div>
   </section>
@@ -275,29 +286,32 @@
       padding: 100px 0;
       text-align: center;
     }
-  
+
     .about-me h2 {
       font-size: 2.5rem;
       font-weight: 700;
-      color: #00ffff;  /* Neon Cyan */
+      color: #00ffff;
+      /* Neon Cyan */
       text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
       margin-bottom: 30px;
       animation: neonTextAnimation 2s ease-in-out infinite alternate;
     }
-  
+
     /* Neon Text Animation */
     @keyframes neonTextAnimation {
       0% {
         text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
       }
+
       50% {
         text-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 255, 255, 1), 0 0 35px rgba(0, 255, 255, 1);
       }
+
       100% {
         text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
       }
     }
-  
+
     .about-me p {
       font-size: 1.2rem;
       line-height: 1.6;
@@ -308,25 +322,26 @@
       margin-left: auto;
       margin-right: auto;
     }
-  
+
     .about-me .icon-container {
       display: flex;
       justify-content: center;
       gap: 30px;
       margin-top: 40px;
     }
-  
+
     .about-me .icon-container i {
       font-size: 3rem;
       color: #00ffff;
       transition: transform 0.3s ease, color 0.3s ease;
     }
-  
+
     .about-me .icon-container i:hover {
       transform: scale(1.1);
-      color: #3700b3;  /* Neon Purple */
+      color: #3700b3;
+      /* Neon Purple */
     }
-  
+
     /* Card for personal information */
     .about-me-card {
       background-color: #1f1f1f;
@@ -339,29 +354,29 @@
       margin-left: auto;
       margin-right: auto;
     }
-  
+
     .about-me-card h3 {
       color: #fff;
       font-size: 2rem;
       font-weight: 600;
     }
-  
+
     .about-me-card p {
       color: #bbb;
       font-size: 1.1rem;
     }
-  
+
     .about-me-card ul {
       list-style-type: none;
       padding: 0;
     }
-  
+
     .about-me-card ul li {
       margin: 10px 0;
       color: #ccc;
       font-size: 1.1rem;
     }
-  
+
     /* About Me Button */
     .about-me .btn-about {
       background-color: #6200ea;
@@ -376,19 +391,20 @@
       cursor: pointer;
       box-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5);
     }
-  
+
     .about-me .btn-about:hover {
       background-color: #3700b3;
       border-color: #3700b3;
       box-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 255, 255, 1);
     }
   </style>
-  
+
   <!-- About Me Section HTML -->
   <section class="about-me">
     <h2 class="neon-text">About Me</h2>
     <p>
-      Hello! I'm Yuvraj Singh, a passionate and dedicated software developer with experience in a wide range of technologies.
+      Hello! I'm Yuvraj Singh, a passionate and dedicated software developer with experience in a wide range of
+      technologies.
       I thrive on challenges, constantly learning and adapting to new technologies. My main areas of expertise include
       front-end and back-end development, database management, and creating user-friendly applications. I take pride in
       building robust and scalable applications that solve real-world problems.
@@ -402,7 +418,7 @@
       <i class="fab fa-bootstrap" title="Bootstrap"></i>
       <i class="fab fa-github" title="GitHub"></i>
     </div>
-  
+
     <div class="about-me-card">
       <h3>Technologies & Skills</h3>
       <p>Here are a few technologies I work with:</p>
@@ -416,248 +432,280 @@
     </div>
     <a href="#projects" class="btn-about">Explore My Projects</a>
   </section>
-  
 
-<!-- Projects Section -->
-<section id="projects" class="bg-dark text-white py-5" data-aos="fade-up">
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-dark text-white py-5" data-aos="fade-up">
     <div class="container text-center">
       <h2 class="section-heading" data-aos="zoom-in">Projects</h2>
       <div class="row">
         <!-- DVERTEX-FEEDBACK -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="card mb-4">
-            <img src="path_to_image/dvertex-feedback.jpg" class="card-img-top project-img" alt="DVERTEX-FEEDBACK">
+            <img src="https://i.pinimg.com/originals/ab/3f/5b/ab3f5b02e9c1da5bc96cad2c0eafbe63.gif" class="card-img-top project-img" alt="DVERTEX-FEEDBACK">
             <div class="card-body">
               <h5 class="card-title">DVERTEX-FEEDBACK</h5>
-              <p class="card-text">DVERTEX-FEEDBACK is a feedback management system designed to help organizations gather and analyze feedback from their clients. It provides real-time reporting and data visualization capabilities. Technologies used: HTML, CSS, JavaScript, and Node.js.</p>
+              <p class="card-text">DVERTEX-FEEDBACK is a feedback management system designed to help organizations
+                gather and analyze feedback from their clients. It provides real-time reporting and data visualization
+                capabilities. Technologies used: HTML, CSS, JavaScript, and Node.js.</p>
               <a href="https://github.com/yuvi007yuvi/DVERTEX-FEEDBACK" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- InsightFlow -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="card mb-4">
-            <img src="path_to_image/insightflow.jpg" class="card-img-top project-img" alt="InsightFlow">
+            <img src="https://i.pinimg.com/originals/ab/3f/5b/ab3f5b02e9c1da5bc96cad2c0eafbe63.gif" class="card-img-top project-img" alt="InsightFlow">
             <div class="card-body">
               <h5 class="card-title">InsightFlow</h5>
-              <p class="card-text">InsightFlow is an analytics dashboard tool that allows users to visualize their business performance in a streamlined interface. The project focuses on data integration and real-time updates. Technologies used: HTML, CSS, JavaScript, React, and Firebase.</p>
+              <p class="card-text">InsightFlow is an analytics dashboard tool that allows users to visualize their
+                business performance in a streamlined interface. The project focuses on data integration and real-time
+                updates. Technologies used: HTML, CSS, JavaScript, React, and Firebase.</p>
               <a href="https://github.com/yuvi007yuvi/InsightFlow" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- kml-checker -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="card mb-4">
-            <img src="path_to_image/kml-checker.jpg" class="card-img-top project-img" alt="kml-checker">
+            <img src="https://i.gyazo.com/56edf25cbc1fae7728c04ae665f3b2f4.gif" class="card-img-top project-img" alt="kml-checker">
             <div class="card-body">
               <h5 class="card-title">kml-checker</h5>
-              <p class="card-text">kml-checker is a tool for validating KML files used in geospatial data applications. It helps detect errors in KML files, ensuring compatibility with GIS platforms. Technologies used: HTML, JavaScript, and Leaflet.js for map integration.</p>
+              <p class="card-text">kml-checker is a tool for validating KML files used in geospatial data applications.
+                It helps detect errors in KML files, ensuring compatibility with GIS platforms. Technologies used: HTML,
+                JavaScript, and Leaflet.js for map integration.</p>
               <a href="https://github.com/yuvi007yuvi/kml-checker" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- BOUNDRY-CHECKER -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="card mb-4">
-            <img src="path_to_image/boundry-checker.jpg" class="card-img-top project-img" alt="BOUNDRY-CHECKER">
+            <img src="https://support.dronelink.com/hc/article_attachments/7810422715539/Map_WP_orbit_preview.gif" class="card-img-top project-img" alt="BOUNDRY-CHECKER">
             <div class="card-body">
               <h5 class="card-title">BOUNDRY-CHECKER</h5>
-              <p class="card-text">BOUNDRY-CHECKER helps users check the boundaries of different geographical areas based on their KML files. It verifies the correctness of the region coordinates. Technologies used: HTML, JavaScript, and KML parsing libraries.</p>
+              <p class="card-text">BOUNDRY-CHECKER helps users check the boundaries of different geographical areas
+                based on their KML files. It verifies the correctness of the region coordinates. Technologies used:
+                HTML, JavaScript, and KML parsing libraries.</p>
               <a href="https://github.com/yuvi007yuvi/BOUNDRY-CHECKER" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- power-bi-session -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
           <div class="card mb-4">
-            <img src="path_to_image/power-bi-session.jpg" class="card-img-top project-img" alt="power-bi-session">
+            <img src="https://media.licdn.com/dms/image/v2/D5610AQFO-qmIjhp2ig/image-shrink_1280/image-shrink_1280/0/1699024803595?e=2147483647&v=beta&t=3jRpdgvYBsCWq3Ui9BnKWFPI09wZotZBEJu6lS2EqUM" class="card-img-top project-img" alt="power-bi-session">
             <div class="card-body">
               <h5 class="card-title">power-bi-session</h5>
-              <p class="card-text">power-bi-session is a data visualization tool that integrates with Power BI to generate interactive reports and dashboards. It provides seamless integration with various data sources. Technologies used: Power BI, Excel, and JavaScript.</p>
+              <p class="card-text">power-bi-session is a data visualization tool that integrates with Power BI to
+                generate interactive reports and dashboards. It provides seamless integration with various data sources.
+                Technologies used: Power BI, Excel, and JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/power-bi-session" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- indian-food-culture -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
           <div class="card mb-4">
-            <img src="path_to_image/indian-food-culture.jpg" class="card-img-top project-img" alt="indian-food-culture">
+            <img src="https://cdn.dribbble.com/users/5950507/screenshots/14543756/media/3cf8ea17f7e1a1b04c56e8b82f8b1a28.gif" class="card-img-top project-img" alt="indian-food-culture">
             <div class="card-body">
               <h5 class="card-title">indian-food-culture</h5>
-              <p class="card-text">indian-food-culture is an educational website that showcases the rich variety of Indian cuisine. It provides users with recipes, historical contexts, and cultural information related to food from India. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">indian-food-culture is an educational website that showcases the rich variety of
+                Indian cuisine. It provides users with recipes, historical contexts, and cultural information related to
+                food from India. Technologies used: HTML, CSS, JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/indian-food-culture" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
         <!-- New-folder -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="700">
           <div class="card mb-4">
             <img src="path_to_image/new-folder.jpg" class="card-img-top project-img" alt="New-folder">
             <div class="card-body">
               <h5 class="card-title">New-folder</h5>
-              <p class="card-text">New-folder is a personal project where users can store and organize files in a virtual file system. It allows for easy file management and cloud synchronization. Technologies used: HTML, CSS, JavaScript, Firebase.</p>
+              <p class="card-text">New-folder is a personal project where users can store and organize files in a
+                virtual file system. It allows for easy file management and cloud synchronization. Technologies used:
+                HTML, CSS, JavaScript, Firebase.</p>
               <a href="https://github.com/yuvi007yuvi/New-folder" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
         <!-- web -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="800">
           <div class="card mb-4">
             <img src="path_to_image/web.jpg" class="card-img-top project-img" alt="web">
             <div class="card-body">
-              <h5 class="card-title">web</h5>
-              <p class="card-text">The "web" project is a personal website built to showcase my skills and previous works. It is a responsive and mobile-friendly website designed using HTML, CSS, and JavaScript.</p>
-              <a href="https://github.com/yuvi007yuvi/web" class="btn btn-primary">View Project</a>
+              <h5 class="card-title">MOVIE WEB</h5>
+              <p class="card-text">The "web" project is a personal website built to showcase my skills and previous
+                works. It is a responsive and mobile-friendly website designed using HTML, CSS, and JavaScript.</p>
+              <a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1ff38068079195.5b5043ef26c11.gif" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- notes-shareing-portal -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="900">
           <div class="card mb-4">
-            <img src="path_to_image/notes-shareing-portal.jpg" class="card-img-top project-img" alt="notes-shareing-portal">
+            <img src="https://cdn.prod.website-files.com/62c67bbf65af229e9075fedf/6572f6eabb7067e8567376c1_Password%20Protected%20Wiki%20Sharing%20fixed.gif" class="card-img-top project-img"
+              alt="notes-shareing-portal">
             <div class="card-body">
               <h5 class="card-title">notes-shareing-portal</h5>
-              <p class="card-text">A platform for sharing notes between students and teachers. It features user authentication and file upload capabilities. Technologies used: HTML, CSS, JavaScript, Firebase.</p>
+              <p class="card-text">A platform for sharing notes between students and teachers. It features user
+                authentication and file upload capabilities. Technologies used: HTML, CSS, JavaScript, Firebase.</p>
               <a href="https://github.com/yuvi007yuvi/notes-shareing-portal" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- BEFORE---AFTER-GENRATOR -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1000">
           <div class="card mb-4">
-            <img src="path_to_image/before-after-generator.jpg" class="card-img-top project-img" alt="BEFORE---AFTER-GENRATOR">
+            <img src="path_to_image/before-after-generator.jpg" class="card-img-top project-img"
+              alt="BEFORE---AFTER-GENRATOR">
             <div class="card-body">
               <h5 class="card-title">BEFORE---AFTER-GENRATOR</h5>
-              <p class="card-text">Before-After-Generator is an image comparison tool that allows users to compare two images side-by-side, providing a slider to view differences. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">Before-After-Generator is an image comparison tool that allows users to compare two
+                images side-by-side, providing a slider to view differences. Technologies used: HTML, CSS, JavaScript.
+              </p>
               <a href="https://github.com/yuvi007yuvi/BEFORE---AFTER-GENRATOR" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- legal-pharmacy -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1100">
           <div class="card mb-4">
             <img src="path_to_image/legal-pharmacy.jpg" class="card-img-top project-img" alt="legal-pharmacy">
             <div class="card-body">
               <h5 class="card-title">legal-pharmacy</h5>
-              <p class="card-text">Legal-Pharmacy is a website designed to help customers find legally approved pharmaceutical products. It contains detailed information about drugs and their legality. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">Legal-Pharmacy is a website designed to help customers find legally approved
+                pharmaceutical products. It contains detailed information about drugs and their legality. Technologies
+                used: HTML, CSS, JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/legal-pharmacy" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- aadarsh-public-school -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1200">
           <div class="card mb-4">
-            <img src="path_to_image/aadarsh-public-school.jpg" class="card-img-top project-img" alt="aadarsh-public-school">
+            <img src="path_to_image/aadarsh-public-school.jpg" class="card-img-top project-img"
+              alt="aadarsh-public-school">
             <div class="card-body">
               <h5 class="card-title">aadarsh-public-school</h5>
-              <p class="card-text">Aadarsh Public School is a website built to provide information about the school, including courses, events, and staff. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">Aadarsh Public School is a website built to provide information about the school,
+                including courses, events, and staff. Technologies used: HTML, CSS, JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/aadarsh-public-school" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- TASK-ASSIGNER -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1300">
           <div class="card mb-4">
             <img src="path_to_image/task-assigner.jpg" class="card-img-top project-img" alt="TASK-ASSIGNER">
             <div class="card-body">
               <h5 class="card-title">TASK-ASSIGNER</h5>
-              <p class="card-text">TASK-ASSIGNER is a task management tool that allows employees to receive, track, and manage assigned tasks. It includes real-time updates and progress tracking. Technologies used: JavaScript, Node.js, MongoDB.</p>
+              <p class="card-text">TASK-ASSIGNER is a task management tool that allows employees to receive, track, and
+                manage assigned tasks. It includes real-time updates and progress tracking. Technologies used:
+                JavaScript, Node.js, MongoDB.</p>
               <a href="https://github.com/yuvi007yuvi/TASK-ASSIGNER" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- facebook-portfolio -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1400">
           <div class="card mb-4">
             <img src="path_to_image/facebook-portfolio.jpg" class="card-img-top project-img" alt="facebook-portfolio">
             <div class="card-body">
               <h5 class="card-title">facebook-portfolio</h5>
-              <p class="card-text">A replica of Facebook's profile page, showcasing personal achievements and career information. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">A replica of Facebook's profile page, showcasing personal achievements and career
+                information. Technologies used: HTML, CSS, JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/facebook-portfolio" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- new-portfolio-full-stack -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1500">
           <div class="card mb-4">
-            <img src="path_to_image/new-portfolio-full-stack.jpg" class="card-img-top project-img" alt="new-portfolio-full-stack">
+            <img src="path_to_image/new-portfolio-full-stack.jpg" class="card-img-top project-img"
+              alt="new-portfolio-full-stack">
             <div class="card-body">
               <h5 class="card-title">new-portfolio-full-stack</h5>
-              <p class="card-text">A complete full-stack portfolio website, featuring both front-end and back-end technologies. It includes user authentication and data storage. Technologies used: HTML, CSS, JavaScript, Node.js, MongoDB.</p>
+              <p class="card-text">A complete full-stack portfolio website, featuring both front-end and back-end
+                technologies. It includes user authentication and data storage. Technologies used: HTML, CSS,
+                JavaScript, Node.js, MongoDB.</p>
               <a href="https://github.com/yuvi007yuvi/new-portfolio-full-stack" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- portfoliyo -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1600">
           <div class="card mb-4">
             <img src="path_to_image/portfoliyo.jpg" class="card-img-top project-img" alt="portfoliyo">
             <div class="card-body">
               <h5 class="card-title">portfoliyo</h5>
-              <p class="card-text">A simple, yet elegant portfolio website to showcase personal work and achievements. Technologies used: HTML, CSS.</p>
+              <p class="card-text">A simple, yet elegant portfolio website to showcase personal work and achievements.
+                Technologies used: HTML, CSS.</p>
               <a href="https://github.com/yuvi007yuvi/portfoliyo" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- portfoliyo-updated -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1700">
           <div class="card mb-4">
             <img src="path_to_image/portfoliyo-updated.jpg" class="card-img-top project-img" alt="portfoliyo-updated">
             <div class="card-body">
               <h5 class="card-title">portfoliyo-updated</h5>
-              <p class="card-text">A more advanced version of my portfolio, designed with the latest front-end technologies and incorporating new design trends. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">A more advanced version of my portfolio, designed with the latest front-end
+                technologies and incorporating new design trends. Technologies used: HTML, CSS, JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/portfoliyo-updated" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- TO-DO-APP -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1800">
           <div class="card mb-4">
             <img src="path_to_image/to-do-app.jpg" class="card-img-top project-img" alt="TO-DO-APP">
             <div class="card-body">
               <h5 class="card-title">TO-DO-APP</h5>
-              <p class="card-text">A simple and interactive to-do app that allows users to create, edit, and delete tasks. It supports real-time task management. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">A simple and interactive to-do app that allows users to create, edit, and delete
+                tasks. It supports real-time task management. Technologies used: HTML, CSS, JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/TO-DO-APP" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
         <!-- animated-background -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1900">
           <div class="card mb-4">
             <img src="path_to_image/animated-background.jpg" class="card-img-top project-img" alt="animated-background">
             <div class="card-body">
               <h5 class="card-title">animated-background</h5>
-              <p class="card-text">A visually engaging website with a dynamic animated background to catch user attention. Technologies used: HTML, CSS, JavaScript.</p>
+              <p class="card-text">A visually engaging website with a dynamic animated background to catch user
+                attention. Technologies used: HTML, CSS, JavaScript.</p>
               <a href="https://github.com/yuvi007yuvi/animated-background-" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
-  
+
       </div>
     </div>
   </section>
-    
 
-<!-- Skills Section -->
-<section id="skills" class="py-5" data-aos="fade-up">
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5" data-aos="fade-up">
     <div class="container text-center">
       <h2 class="section-heading" data-aos="zoom-in">Skills</h2>
       <div class="row">
@@ -677,7 +725,8 @@
             <div class="card-body">
               <i class="fas fa-paint-brush fa-3x mb-3"></i>
               <h5 class="card-title">CSS & Tailwind</h5>
-              <p class="card-text">Proficient in styling and customizing designs using Tailwind CSS for modern web UIs.</p>
+              <p class="card-text">Proficient in styling and customizing designs using Tailwind CSS for modern web UIs.
+              </p>
             </div>
           </div>
         </div>
@@ -697,7 +746,8 @@
             <div class="card-body">
               <i class="fab fa-react fa-3x mb-3"></i>
               <h5 class="card-title">MERN Stack</h5>
-              <p class="card-text">Proficient in MongoDB, Express.js, React.js, and Node.js for full-stack web development.</p>
+              <p class="card-text">Proficient in MongoDB, Express.js, React.js, and Node.js for full-stack web
+                development.</p>
             </div>
           </div>
         </div>
@@ -707,7 +757,8 @@
             <div class="card-body">
               <i class="fab fa-fire fa-3x mb-3"></i>
               <h5 class="card-title">Firebase</h5>
-              <p class="card-text">Experience with Firebase for authentication, cloud storage, and real-time database management in web applications.</p>
+              <p class="card-text">Experience with Firebase for authentication, cloud storage, and real-time database
+                management in web applications.</p>
             </div>
           </div>
         </div>
@@ -717,7 +768,8 @@
             <div class="card-body">
               <i class="fas fa-chart-line fa-3x mb-3"></i>
               <h5 class="card-title">Power BI</h5>
-              <p class="card-text">Skilled in creating interactive reports, dashboards, and data visualizations using Power BI.</p>
+              <p class="card-text">Skilled in creating interactive reports, dashboards, and data visualizations using
+                Power BI.</p>
             </div>
           </div>
         </div>
@@ -727,7 +779,8 @@
             <div class="card-body">
               <i class="fas fa-table fa-3x mb-3"></i>
               <h5 class="card-title">Excel</h5>
-              <p class="card-text">Advanced proficiency in Excel for data analysis, pivot tables, and complex formulas.</p>
+              <p class="card-text">Advanced proficiency in Excel for data analysis, pivot tables, and complex formulas.
+              </p>
             </div>
           </div>
         </div>
@@ -737,15 +790,16 @@
             <div class="card-body">
               <i class="fas fa-briefcase fa-3x mb-3"></i>
               <h5 class="card-title">MS Office</h5>
-              <p class="card-text">Experienced in using MS Office Suite (Word, PowerPoint, Excel) for various business and administrative tasks.</p>
+              <p class="card-text">Experienced in using MS Office Suite (Word, PowerPoint, Excel) for various business
+                and administrative tasks.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  
+
+
 
   <!-- Contact Section -->
   <style>
@@ -756,29 +810,32 @@
       padding: 100px 0;
       text-align: center;
     }
-  
+
     .contact h2 {
       font-size: 2.5rem;
       font-weight: 700;
-      color: #f6fbfb;  /* Neon Cyan */
+      color: #f6fbfb;
+      /* Neon Cyan */
       text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
       margin-bottom: 30px;
       animation: neonTextAnimation 2s ease-in-out infinite alternate;
     }
-  
+
     /* Neon Text Animation */
     @keyframes neonTextAnimation {
       0% {
         text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
       }
+
       50% {
         text-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 255, 255, 1), 0 0 35px rgba(0, 255, 255, 1);
       }
+
       100% {
         text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
       }
     }
-  
+
     /* Form Styles */
     .contact-form {
       max-width: 600px;
@@ -788,7 +845,7 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5);
     }
-  
+
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -801,13 +858,13 @@
       font-size: 1.1rem;
       box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), 0 0 10px rgba(0, 255, 255, 0.3);
     }
-  
+
     .contact-form input:focus,
     .contact-form textarea:focus {
       outline: none;
       box-shadow: 0 0 8px rgba(0, 255, 255, 0.5), 0 0 15px rgba(0, 255, 255, 0.5);
     }
-  
+
     .contact-form button {
       background-color: #6200ea;
       border-color: #6200ea;
@@ -820,13 +877,13 @@
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.3s ease;
     }
-  
+
     .contact-form button:hover {
       background-color: #3700b3;
       border-color: #3700b3;
       transform: scale(1.05);
     }
-  
+
     /* Social Media Icons */
     .social-icons {
       display: flex;
@@ -834,18 +891,18 @@
       gap: 30px;
       margin-top: 30px;
     }
-  
+
     .social-icons a {
       color: #fff;
       font-size: 2rem;
       transition: transform 0.3s ease, color 0.3s ease;
     }
-  
+
     .social-icons a:hover {
       transform: scale(1.1);
       color: #00ffff;
     }
-  
+
     .contact .btn-contact {
       background-color: #6200ea;
       border-color: #6200ea;
@@ -859,80 +916,81 @@
       cursor: pointer;
       box-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5);
     }
-  
+
     .contact .btn-contact:hover {
       background-color: #3700b3;
       border-color: #3700b3;
       box-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 255, 255, 1);
     }
   </style>
-  
 
-  
-    <!-- Contact Form -->
-    <section class="contact">
-        <h2 class="neon-text">Contact Me</h2>
-        <p>Feel free to get in touch with me. I'd love to hear from you!</p>
-      
-        <!-- Web3Form Contact Form -->
-  <div class="contact-form">
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <!-- Replace with your Access Key -->
-      <input type="hidden" name="access_key" value="a83c84da-1fe7-4563-ad7e-3ce32f86f157">
 
-      <!-- Form Inputs -->
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-      <!-- Honeypot Spam Protection -->
-      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2 class="neon-text">Contact Me</h2>
+    <p>Feel free to get in touch with me. I'd love to hear from you!</p>
 
-      <!-- Submit Button -->
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-          <a href="https://github.com/yuvi007yuvi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/yuvrajtomarno1/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:yuvrajtomar798@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-      
- 
+    <!-- Web3Form Contact Form -->
+    <div class="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="a83c84da-1fe7-4563-ad7e-3ce32f86f157">
 
-  <!-- Footer -->
-  <footer class="text-center py-4 footer">
-    <p>&copy; 2025 Yuvraj Singh Tomar. All Rights Reserved.</p>
-  </footer>
+        <!-- Form Inputs -->
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-  // Optional: Handle form submission feedback (success/error)
-  const form = document.getElementById("contact-form");
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    
-    fetch("https://web3forms.com/api/v1/submit", {
-      method: "POST",
-      body: new FormData(form),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert("Message sent successfully!");
-        form.reset();
-      })
-      .catch((error) => {
-        alert("Error sending message. Please try again later.");
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://github.com/yuvi007yuvi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/yuvrajtomarno1/" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="mailto:yuvrajtomar798@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4 footer">
+      <p>&copy; 2025 Yuvraj Singh Tomar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Optional: Handle form submission feedback (success/error)
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        fetch("https://web3forms.com/api/v1/submit", {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            alert("Message sent successfully!");
+            form.reset();
+          })
+          .catch((error) => {
+            alert("Error sending message. Please try again later.");
+          });
       });
-  });
-</script>
-  <script>
-    AOS.init();
-  </script>
+    </script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
